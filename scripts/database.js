@@ -66,4 +66,5 @@ database.cities = cityCollector;
 database.landmarks = landmarkCollector;
 database.leaders = leaderCollector;
 modifyCountries();
+
 console.log(database.countries[0]);
