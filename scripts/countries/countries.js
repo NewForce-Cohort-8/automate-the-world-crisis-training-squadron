@@ -4,15 +4,15 @@ export let countryCollector = [];
 //test data
 makeCountry(
 	countryCollector,
-	"image",
+	"https://i.redd.it/rsmvfe4n7df51.jpg",
 	"The Netherlands",
-	"date",
-	"latitude",
-	"long",
-	278723827,
-	"strup waffle",
+	"May 5, 1945",
+	"5.2913° E",
+	"52.1326° N",
+	17530000,
+	"poffertjes",
 	"Dutch",
-	"French"
+	"Frisian"
 );
 
 console.log(countryCollector);
