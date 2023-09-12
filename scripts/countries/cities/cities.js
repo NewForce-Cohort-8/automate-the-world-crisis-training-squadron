@@ -4,6 +4,18 @@ export let cityCollector = [];
 
 makeCity(
 	cityCollector,
+	"Ukraine",
+	"scripts/countries/celebrities/images/Kyiv motherland.jpg",
+	"Kyiv",
+	3017000,
+	"50.4501° N",
+	"30.5234° E",
+	"Chicken Kyiv",
+	"Historical architecture, The tallest monument in the world(Motherland-102 meters"
+);
+
+makeCity(
+	cityCollector,
 	"Italy",
 	"https://www.michiganhumane.org/wp-content/uploads/2018/07/Cat-Google-Maps-1080x675.png",
 	"Rome",

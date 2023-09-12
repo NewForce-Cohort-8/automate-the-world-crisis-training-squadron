@@ -72,7 +72,7 @@ export const makeCelebrity = (
 		name: name,
 		type: type,
 		birthday: birthday,
-		death: death, //(can be “date” or “”)
+		death: death, 
 		knownFor: knownFor,
 	};
 	/*
@@ -107,7 +107,7 @@ export const makeLeader = (
 		name: name,
 		type: type,
 		birthday: birthday,
-		death: death, //(can be “date” or “”)
+		death: death, 
 		party: party,
 		knownFor: knownFor,
 	};

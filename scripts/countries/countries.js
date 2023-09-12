@@ -5,6 +5,18 @@ export let countryCollector = [];
 
 makeCountry(
 	countryCollector,
+	"scripts/countries/celebrities/images/ukr millt sunflow.jpg",
+	"Ukraine",
+	"August 24th 1991",
+	"48.3794° N",
+	"31.1656° E",
+	36774636,
+	"Borscht, Varenyky, Holubtsi, Pirozhki, Salo",
+	"Ukrainian"
+);
+
+makeCountry(
+	countryCollector,
 	"https://media.istockphoto.com/id/108268421/photo/overzealous-mother-feeding-adult-son-pasta.jpg?s=1024x1024&w=is&k=20&c=ACXPWBdbyXrJnsKM8OA9SMUC9JGbQbDvX6REpZCOlms=",
 	"Italy",
 	"June 2, 1946",
