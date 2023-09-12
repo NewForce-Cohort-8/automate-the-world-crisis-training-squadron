@@ -1,8 +1,11 @@
 import { countryCollector } from "./countries/countries.js";
 import { celebrityCollector } from "./countries/celebrities/celebrities.js";
+import { cityCollector } from "./countries/cities/cities.js";
+import { landmarkCollector } from "./countries/landmarks/landmarks.js";
+import { leaderCollector } from "./countries/leaders/leaders.js";
 import { justLetters } from "./countries/factory-functions.js";
 
-export let database = {
+let database = {
 	countries: [],
 	cities: [],
 	celebrities: [],
@@ -52,8 +55,9 @@ const modifyCountries = () => {
 	}
 };
 
-let newArray = modifyCountries();
 database.countries = countryCollector;
 database.celebrities = celebrityCollector;
+database.cities = cityCollector;
+database.landmarks = landmarkCollector;
+database.leaders = leaderCollector;
 console.log(database);
-console.log(newArray);
