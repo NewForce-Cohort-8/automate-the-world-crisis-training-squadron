@@ -1,7 +1,19 @@
 import { makeCountry } from "./factory-functions.js";
 export let countryCollector = [];
 
-//test data
+
+makeCountry(
+	countryCollector,
+
+	"https://easy-sushi.com/wp-content/uploads/2020/07/easy_sushi_7_anectodes_sur_le_japon.jpg",
+	"Japan", 
+	"1952",
+	"36.2048° N", 
+	"138.2529° E",
+	"123294513",
+	"Japanese Curry Rice", 
+	"Japanese",
+); 
 makeCountry(
 	countryCollector,
 	"https://i.redd.it/rsmvfe4n7df51.jpg",
