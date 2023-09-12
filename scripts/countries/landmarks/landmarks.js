@@ -6,13 +6,13 @@ export let landmarkCollector = [];
 makeLandmark(
 	landmarkCollector,
 	"The Netherlands",
-	"image",
-	"Windmill",
-	"symbol",
-	90.4,
-	93.6,
-	"Clean Energy",
-	"Milling grains"
+	"https://upload.wikimedia.org/wikipedia/commons/e/e0/De_gooyer_amsterdam.jpg",
+	"De Gooyer Molen",
+	"Monument",
+	"4.9262° E",
+	"52.3669° N",
+	"Tallest wooden mill in The Netherlands",
+	"Last of the 26 corn mills on the bastions of the 17th century walls of Amsterdam"
 );
 
 console.log(landmarkCollector);
