@@ -2,6 +2,18 @@ import { makeCelebrity } from "../factory-functions.js";
 
 export let celebrityCollector = [];
 
+
+makeCelebrity(
+	celebrityCollector,
+	"Italy",
+	"https://static2.refinery29.com/bin/entry/b6f/x/246329/rmaniembed.jpg",
+	"Giorgio Armani",
+	"Fashion Designer",
+	"July 11, 1934",
+	"",
+	"Giorgio Armani's signature style of relaxed yet luxurious ready-to-wear and elegant, intricately beaded evening wear helped introduce ease and streamlined modernity to late 20th-century dressing."
+);
+
 makeCelebrity(
   celebrityCollector,
 	"Japan", 
@@ -31,3 +43,4 @@ makeCelebrity(
 
 
 console.log(celebrityCollector);
+
