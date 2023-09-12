@@ -13,7 +13,7 @@ export const makeCountry = (
 		celebrities: [],
 		landmarks: [],
 		cities: [],
-		//leader,
+		leaders: [],
 		image: image,
 		name: name,
 		independenceDay: independenceDay,
@@ -37,6 +37,7 @@ export const makeCity = (
 	...knownFor
 ) => {
 	let city = {
+		leaders: [],
 		country: country,
 		image: image,
 		name: name,
