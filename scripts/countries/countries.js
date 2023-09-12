@@ -1,18 +1,17 @@
 import { makeCountry } from "./factory-functions.js";
 export let countryCollector = [];
 
-//test data
+
 makeCountry(
 	countryCollector,
-	"image",
-	"The Netherlands",
-	"date",
-	"latitude",
-	"long",
-	278723827,
-	"strup waffle",
-	"Dutch",
-	"French"
+	"scripts/countries/celebrities/images/ukr millt sunflow.jpg",
+	"Ukraine",
+	"August 24th 1991",
+	"48.3794° N",
+	"31.1656° E",
+	36774636,
+	"Borscht, Varenyky, Holubtsi, Pirozhki, Salo",
+	"Ukrainian"
 );
 
 console.log(countryCollector);
