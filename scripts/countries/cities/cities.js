@@ -73,9 +73,9 @@ makeCity(
 	  643452,
 	  "37.5903 N",
 	  "23.4341 E",
-	  "Democracy",
-	  "Being corrupted by Socrates",
-	  "The Navy"
+	  "The birthplace of Democracy",
+	  "The youth were 'corrupted' by Socrates (supposedly)",
+	  "Had a large navy in ancient times"
   );
 
 

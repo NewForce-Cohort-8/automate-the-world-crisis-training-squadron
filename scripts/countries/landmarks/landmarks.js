@@ -72,7 +72,7 @@ makeLandmark(
 	"37.9715° N", 
 	"23.7266° E", 
 	"Dedicated to Athena", 
-	"Architecture that makes use of the 1:1.618 golden ratio"
+	"Architecture that makes use of the 1:1.618 <a href='https://en.wikipedia.org/wiki/Golden_ratio'>golden ratio<a>."
   );
 
 console.log(landmarkCollector);
