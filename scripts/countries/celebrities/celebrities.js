@@ -56,8 +56,8 @@ makeCelebrity(
 	"The Netherlands",
 	"https://i.dailymail.co.uk/i/pix/2015/05/03/20/2827B13E00000578-3066450-Wheely_fun_Famke_Janssen_pedalled_her_way_past_a_photo_shoot_in_-a-5_1430681713678.jpg",
 	"Famke Janssen",
+	"Actress",
 	"November 5th, 1964",
-	"date",
 	"",
 	"X-Men film series",
 	"Taken film trilogy",
@@ -66,3 +66,22 @@ makeCelebrity(
 );
 
 console.log(celebrityCollector);
+
+/*
+const findAge = (date1, date2, obj) => {
+	let age;
+	let birth = obj.birthday;
+};
+let today = new Date();
+let thisYear = today.getFullYear();
+let thisMonth = today.getMonth() + 1;
+let thisDay = today.getDate();
+console.log(today, thisYear, thisMonth, thisDay);
+
+celebrityCollector.forEach((celebrity) => {
+	let birth = celebrity.birthday;
+	let birthArray = birth.split(",").join("").split("th").join("").split(" ");
+	console.log(birthArray);
+	// console.log(celebrity.birthday.getDate());
+});
+*/

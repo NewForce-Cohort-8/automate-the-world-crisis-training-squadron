@@ -1,3 +1,6 @@
+//object data provider functino
+
+//factory funtctions
 export const makeCountry = (
 	arr,
 	image,
@@ -44,12 +47,6 @@ export const makeCity = (
 		population: population,
 		latitude: latitude,
 		longitude: longitude,
-		/*
-	mayor: {
-		image: ,
-		name: ,
-		party: ,
-        */
 		knownFor: knownFor,
 	};
 
@@ -72,22 +69,9 @@ export const makeCelebrity = (
 		name: name,
 		type: type,
 		birthday: birthday,
-		death: death, 
+		death: death,
 		knownFor: knownFor,
 	};
-	/*
-const findAge = (birthday, death) =>{
-	let today = new Date();
-	let age;
-	If (death !== "") {
-	age = death - birthday;
-} else {
-    age = today - birthday
-}
-celebrity.age = whateverFunctionWeNeedToGetToDisplayInYears(age)
-}
-findAge()
-*/
 	arr.push(celebrity);
 };
 export const makeLeader = (
@@ -107,7 +91,7 @@ export const makeLeader = (
 		name: name,
 		type: type,
 		birthday: birthday,
-		death: death, 
+		death: death,
 		party: party,
 		knownFor: knownFor,
 	};
