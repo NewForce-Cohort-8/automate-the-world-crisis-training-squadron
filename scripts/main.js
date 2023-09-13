@@ -115,8 +115,10 @@ countries.forEach((country) => {
         </div>
         <div class="column">`;
 
-		/*//<h3 class="leaders">Leaders</h3>
-		htmlString = +`<div class="row">;`;
+		htmlString += `<h3 class="leaders">Leaders</h3>
+        <div class="row">
+        <h3 class="leaders">Leaders</h3>
+        <div class="row">`;
 
 		city.leaders.forEach((leader) => {
 			htmlString += ` <img src="${leader.image}" class="leader-image image" />
@@ -128,14 +130,12 @@ countries.forEach((country) => {
         <h4 class="birthday data-header">Birthday</h4>
         <p class="data">${leader.birthday}</p>
         </div>`;
-
 			if (leader.death !== "") {
 				htmlString += `<div class="row">
             <h3 class="death data-header">Death</h3>
             <p class="data">${leader.death}</p>
             </div>`;
 			}
-
 			htmlString += `<div class="row">
         <h4 class="party data-header">Party</h4>
         <p class="data">${leader.party}</p>
@@ -146,9 +146,11 @@ countries.forEach((country) => {
 			leader.knownFor.forEach((fact) => {
 				htmlString += `<div class"fact"><p>${fact}</p></div>`;
 			});
-
+			leader.knownFor.forEach((fact) => {
+				htmlString += `<div class"fact"><p>${fact}</p></div>`;
+			});
 			htmlString += `</div>`;
-		});*/
+		});
 		htmlString += `
         <div class="column">
         <h4 class="knownFor data-header">Fun Facts</h4>`;

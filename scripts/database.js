@@ -51,25 +51,14 @@ const modifyCountries = () => {
 			for (let t = 0; t < database.cities.length; t++) {
 				if (
 					justLetters(database.leaders[g].place) ===
-					justLetters(database.cities[t].name)
+						justLetters(database.cities[t].name) &&
+					database.cities[t].leaders.indexOf(database.leaders[g]) === -1
 				) {
 					database.cities[t].leaders.push(database.leaders[g]);
 				}
 			}
 		}
 	}
-	/*
-	for (let g = 0; g < database.leaders.length; g++) {
-		for (let t = 0; t < database.cities.length; t++) {
-			if (
-				justLetters(database.leaders[g].place) ===
-				justLetters(database.cities[t].name)
-			) {
-				database.cities[t].leaders.push(database.leaders[g]);
-			}
-		}
-	}
-	*/
 };
 
 database.countries = countryCollector;
