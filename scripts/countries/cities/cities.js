@@ -16,6 +16,18 @@ makeCity(
 
 makeCity(
 	cityCollector,
+	"Ukraine",
+	"scripts/countries/celebrities/images/crimea.jpg",
+	"Crimean Peninsula",
+	2416856,
+	"45,3453° N",
+	"34.4997° E",
+	"Cheburekki, Yantiq, Sarma, Laghman, Chak-Chak, Sherbet",
+	"Crimea is a peninsula in Eastern Europe, on the northern coast of the Black Sea, almost entirely surrounded by the Black Sea and the smaller Sea of Azov."
+);
+
+makeCity(
+	cityCollector,
 	"Italy",
 	"https://www.michiganhumane.org/wp-content/uploads/2018/07/Cat-Google-Maps-1080x675.png",
 	"Rome",
