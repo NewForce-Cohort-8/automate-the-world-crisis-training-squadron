@@ -73,10 +73,10 @@ makeCelebrity(
 	"Philosopher",
 	"470 BC",
 	"399 BC",
-	"Thinking about stuff",
-	"Teaching Plato",
-	"Corrupting the youth of Athens",
-	"Drinking some juice"
+	"Known for thinking about stuff",
+	"Taught Plato",
+	"Corrupted the youth of Athens (supposedly)",
+	"Died from drinking juice"
 );
 
 console.log(celebrityCollector);
