@@ -114,12 +114,10 @@ countries.forEach((country) => {
         <p class="data">${city.latitude} ${city.longitude}</p>
         </div>
         <div class="column">`;
-
-		htmlString += `<h3 class="leaders">Leaders</h3>
-        <div class="row">
-        <h3 class="leaders">Leaders</h3>
+		if (city.leaders.length > 0) {
+			htmlString += `<h3 class="leaders">Leaders</h3>
         <div class="row">`;
-
+		}
 		city.leaders.forEach((leader) => {
 			htmlString += ` <img src="${leader.image}" class="leader-image image" />
         <h4 class="leader-name">${leader.name}</h4>
@@ -139,28 +137,18 @@ countries.forEach((country) => {
 			htmlString += `<div class="row">
         <h4 class="party data-header">Party</h4>
         <p class="data">${leader.party}</p>
-        </div>
+        </div>`;
+
+			htmlString += `
         <div class="column">
         <h4 class="knownFor data-header">Fun Facts</h4>`;
-
-			leader.knownFor.forEach((fact) => {
+			city.knownFor.forEach((fact) => {
 				htmlString += `<div class"fact"><p>${fact}</p></div>`;
 			});
-			leader.knownFor.forEach((fact) => {
-				htmlString += `<div class"fact"><p>${fact}</p></div>`;
-			});
-			htmlString += `</div>`;
 		});
-		htmlString += `
-        <div class="column">
-        <h4 class="knownFor data-header">Fun Facts</h4>`;
-		city.knownFor.forEach((fact) => {
-			htmlString += `<div class"fact"><p>${fact}</p></div>`;
-		});
-	});
 
-	country.landmarks.forEach((landmark) => {
-		htmlString += `<section class="landmark-card">
+		country.landmarks.forEach((landmark) => {
+			htmlString += `<section class="landmark-card">
         <img src="${landmark.image}" class="landmark-image image" />
         <h2 class="landmark-name">${landmark.name}</h2>
         <div class="row">
@@ -172,13 +160,14 @@ countries.forEach((country) => {
         <p class="data">${landmark.latitude} ${landmark.longitude}</p>
         </div>
         <div class="column">`;
-		htmlString += `
+			htmlString += `
         <div class="column">
         <h4 class="knownFor data-header">Fun Facts</h4>`;
-		landmark.knownFor.forEach((fact) => {
-			htmlString += `<div class"fact"><p>${fact}</p></div>`;
+			landmark.knownFor.forEach((fact) => {
+				htmlString += `<div class"fact"><p>${fact}</p></div>`;
+			});
 		});
+		htmlString += `</section>`;
 	});
-	htmlString += `</section>`;
 });
 leftSide.innerHTML = htmlString;
