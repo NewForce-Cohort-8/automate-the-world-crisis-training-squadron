@@ -65,4 +65,18 @@ makeCelebrity(
 	"Nip Tuck"
 );
 
+makeCelebrity(
+	celebrityCollector,
+	"Greece",
+	"scripts/countries/celebrities/images/socrates-1.jpg",
+	"Socrates",
+	"Philosopher",
+	"470 BC",
+	"399 BC",
+	"Thinking about stuff",
+	"Teaching Plato",
+	"Corrupting the youth of Athens",
+	"Drinking some juice"
+);
+
 console.log(celebrityCollector);

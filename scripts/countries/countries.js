@@ -51,5 +51,17 @@ makeCountry(
 	"Frisian"
 );
 
+makeCountry(
+	countryCollector,
+	"scripts/countries/celebrities/images/greece-city.jpg",
+	"Greece",
+	"March 25, 1821",
+	"39.3707° N",
+	"21.7101° E",
+	10482487,
+	"Baklava",
+	"Greek"
+);
+
 console.log(countryCollector);
 

@@ -63,4 +63,16 @@ makeLandmark(
 	"Last of the 26 corn mills on the bastions of the 17th century walls of Amsterdam"
 );
 
+makeLandmark(
+	landmarkCollector, 
+	"Greece", 
+	"scripts/countries/celebrities/images/The_Parthenon_in_Athens.jpg",
+	"The Parthenon", 
+	"Temple", 
+	"37.9715° N", 
+	"23.7266° E", 
+	"Dedicated to Athena", 
+	"Architecture that makes use of the 1:1.618 golden ratio"
+  );
+
 console.log(landmarkCollector);

@@ -90,4 +90,16 @@ makeLeader(
 	"Was going to be an airline pilot if he wasn't royalty"
 );
 
+makeLeader(
+	leaderCollector,
+	"Greece",
+	"scripts/countries/celebrities/images/Sakellaropoulou.jpg",
+	"Katerina Sakellaropoulou",
+	"President",
+	"May 30, 1956",
+	"",
+	"Independent",
+	"Is a judge"
+);
+
 console.log(leaderCollector);

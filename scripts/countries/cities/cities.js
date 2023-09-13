@@ -53,5 +53,18 @@ makeCity(
 	"The Van Gogh Museum"
 );
 
+makeCity(
+	cityCollector,
+	  "Greece",
+	  "scripts/countries/celebrities/images/athenean-coin.jpg",
+	  "Athens",
+	  643452,
+	  "37.5903 N",
+	  "23.4341 E",
+	  "Democracy",
+	  "Being corrupted by Socrates",
+	  "The Navy"
+  );
+
 
 console.log(cityCollector);
