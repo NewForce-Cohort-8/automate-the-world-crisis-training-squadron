@@ -115,8 +115,7 @@ countries.forEach((country) => {
         </div>
         <div class="column">`;
 
-
-		htmlString = +`<h3 class="leaders">Leaders</h3>
+		htmlString += `<h3 class="leaders">Leaders</h3>
         <div class="row">
         <h3 class="leaders">Leaders</h3>
         <div class="row">`;
@@ -183,5 +182,3 @@ countries.forEach((country) => {
 	htmlString += `</section>`;
 });
 leftSide.innerHTML = htmlString;
-
-
