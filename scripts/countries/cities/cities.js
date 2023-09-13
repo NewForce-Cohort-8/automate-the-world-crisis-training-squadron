@@ -28,6 +28,31 @@ makeCity(
 
 makeCity(
 	cityCollector,
+	"Ukraine",
+	"scripts/countries/celebrities/images/lviv.jpg",
+	"Lviv",
+	721301,
+	"49.8397° N",
+	"24.0297° E",
+	"Banosz, Halushki, Lviv coffee, Lviv chocolate, Lviv syrnyk",
+	"Lviv is the city where the first Ukrainian book was printed, the first railroad tracks and a European-style post office were built, the first Ukrainian theater, university, and school were opened.",
+	" The world's first kerosene lamp was lit and the first balloon was lifted into the air."
+);
+
+makeCity(
+	cityCollector,
+	"Ukraine",
+	"scripts/countries/celebrities/images/odesa.jpeg",
+	"Odessa",
+	112483,
+	"46.4825° N",
+	"30.7233° E",
+	"Gefilte fish, seafood, varenyky with cherries",
+	"The third most populous city in Ukraine and is alternatively known as the 'Pearl of the Black Sea',Southern Palmyra'"
+)
+
+makeCity(
+	cityCollector,
 	"Italy",
 	"https://www.michiganhumane.org/wp-content/uploads/2018/07/Cat-Google-Maps-1080x675.png",
 	"Rome",

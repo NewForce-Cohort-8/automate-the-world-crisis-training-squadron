@@ -10,8 +10,8 @@ makeLandmark(
 	"scripts/countries/celebrities/images/Khortytsia.jpg",
 	"National Reserve Khortytsia",
 	"symbol",
-	47.8600,
-	35.0712,
+	"47.8600° N",
+	"35.0712° E",
 	"An unique memorial of nature, culture and history of Zaporizhzhia Cossacks",
 	"Khortytsia is one of the Seven Wonders of Ukraine"
 );
@@ -22,11 +22,23 @@ makeLandmark(
 	"Ukraine",
 	"scripts/countries/celebrities/images/lake.jpg",
 	"Svitiaz Lake",
-	514966,
-	23.8461,
+	"514966° N",
+	"23.8461° E",
 	"Svitiaz is the deepest lake in Ukraine, with  a max depth of 58.4 m",
 	"Scientists claim that the reservoir appeared approximately 10,000 years ago "
 );
+
+makeLandmark(
+	landmarkCollector,
+	"Ukraine",
+	"scripts/countries/celebrities/images/mountains.jpg",
+	"Carpathian Mountains",
+    "47.2390° N",
+	"25.5909° E",
+	"The Carpathian Mountains are home to one of the largest undisturbed forests in Europe",
+	"400 unique species of mammals, including the Carpathian chamois, call the Carpathian Mountains home",
+	"60% of European brown bear population lives in the Carpathian Mountains"
+)
 
 makeLandmark(
 	landmarkCollector,

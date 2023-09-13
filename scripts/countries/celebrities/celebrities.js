@@ -28,6 +28,8 @@ makeCelebrity(
 	"National singer of Ukraine, winner of Eurovision 2016"
 );
 
+makeCelebrity(
+	celebrityCollector,
 	"Italy",
 	"https://static2.refinery29.com/bin/entry/b6f/x/246329/rmaniembed.jpg",
 	"Giorgio Armani",
