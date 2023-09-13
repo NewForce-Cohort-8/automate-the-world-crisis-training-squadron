@@ -81,11 +81,11 @@ makeCelebrity(
 
 console.log(celebrityCollector);
 
-/*
 const findAge = (date1, date2, obj) => {
 	let age;
 	let birth = obj.birthday;
 };
+/*
 let today = new Date();
 let thisYear = today.getFullYear();
 let thisMonth = today.getMonth() + 1;
@@ -97,5 +97,4 @@ celebrityCollector.forEach((celebrity) => {
 	let birthArray = birth.split(",").join("").split("th").join("").split(" ");
 	console.log(birthArray);
 	// console.log(celebrity.birthday.getDate());
-});
-*/
+});*/
