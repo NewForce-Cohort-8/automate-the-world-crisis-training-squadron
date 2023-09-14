@@ -21,6 +21,7 @@ makeLeader(
 	"Volodymyr Zelenskyy",
 	"President of Ukraine",
 	"January 25th 1978",
+	" ",
 	"Independent party"
 );
 

@@ -24,6 +24,7 @@ makeCelebrity(
 	"Susana Jamaladinova-'Jamala'",
 	"Ukrainian singer",
 	"August 27th 1983",
+	" ",
 	"Ukrainian, Crimean Tatar, English and russian",
 	"National singer of Ukraine, winner of Eurovision 2016"
 );
