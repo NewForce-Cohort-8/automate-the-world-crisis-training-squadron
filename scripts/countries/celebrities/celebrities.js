@@ -2,7 +2,6 @@ import { makeCelebrity } from "../factory-functions.js";
 
 export let celebrityCollector = [];
 
-
 makeCelebrity(
 	celebrityCollector,
 	"Ukraine",
@@ -37,29 +36,29 @@ makeCelebrity(
 	"Fashion Designer",
 	"July 11, 1934",
 	"",
-	"Giorgio Armani's signature style of relaxed yet luxurious ready-to-wear and elegant, intricately beaded evening wear helped introduce ease and streamlined modernity to late 20th-century dressing."
+	"His designs are best known for having sophisticated simplicity, sleek tailoring and classic colours."
 );
 
 makeCelebrity(
-  celebrityCollector,
-	"Japan", 
+	celebrityCollector,
+	"Japan",
 	"https://static01.nyt.com/images/2023/01/11/multimedia/11tennis-osaka1-pwhv/11tennis-osaka1-pwhv-superJumbo.jpg",
-	"Naomi Osaka", 
-	"Tennis Star", 
-	"October 16, 1997", 
+	"Naomi Osaka",
+	"Tennis Star",
+	"October 16, 1997",
 	"",
 	"World's No. 1 in singles by the Women's Tennis Association",
 	"Four Grand Slam singles titles, including two consecutive US Opens in 2018 and 2019",
-	"Currently dating US Rapper Cordae",
-); 
+	"Currently dating US Rapper Cordae"
+);
 
 makeCelebrity(
-  celebrityCollector,
+	celebrityCollector,
 	"The Netherlands",
 	"https://i.dailymail.co.uk/i/pix/2015/05/03/20/2827B13E00000578-3066450-Wheely_fun_Famke_Janssen_pedalled_her_way_past_a_photo_shoot_in_-a-5_1430681713678.jpg",
 	"Famke Janssen",
+	"Actress",
 	"November 5th, 1964",
-	"date",
 	"",
 	"X-Men film series",
 	"Taken film trilogy",
@@ -67,6 +66,37 @@ makeCelebrity(
 	"Nip Tuck"
 );
 
+makeCelebrity(
+	celebrityCollector,
+	"Greece",
+	"scripts/countries/celebrities/images/socrates-1.jpg",
+	"Socrates",
+	"Philosopher",
+	"470 BC",
+	"399 BC",
+	"Known for thinking about stuff",
+	"Taught Plato",
+	"Corrupted the youth of Athens (supposedly)",
+	"Died from drinking juice"
+);
 
 console.log(celebrityCollector);
 
+/*
+const findAge = (date1, date2, obj) => {
+	let age;
+	let birth = obj.birthday;
+};
+let today = new Date();
+let thisYear = today.getFullYear();
+let thisMonth = today.getMonth() + 1;
+let thisDay = today.getDate();
+console.log(today, thisYear, thisMonth, thisDay);
+
+celebrityCollector.forEach((celebrity) => {
+	let birth = celebrity.birthday;
+	let birthArray = birth.split(",").join("").split("th").join("").split(" ");
+	console.log(birthArray);
+	// console.log(celebrity.birthday.getDate());
+});
+*/

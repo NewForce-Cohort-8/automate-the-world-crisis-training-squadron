@@ -28,14 +28,14 @@ makeLeader(
 makeLeader(
 	leaderCollector,
 	"Italy",
-	"https://www.irancartoon.com/site/media/uploads/daily/marzio_mariani---sergio_mattarella.jpg",
+	"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.deviantart.com%2Fgaryckarntzen%2Fart%2FSergio-Mattarella-President-of-Italy-892854996&psig=AOvVaw3WD2zIOSwOJ3BOU9YRocnU&ust=1694717385272000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCJDZ0rOgqIEDFQAAAAAdAAAAABAD",
 	"Sergio Mattarella",
 	"President of Italy",
 	"January 31, 2015",
 	"still active President",
 	"Catholic leftist politician",
-	"He is the second longest-serving president of Italy, following his predecessor Giorgio Napolitano. Most recently he is making headlines for deciding to veto a populist alliance's choice of finance minister, causing their proposed government to collapse and plunging Italy into political turmoil."
-);
+	"Second longest-serving president"
+	);
 
 makeLeader(
 	leaderCollector,
@@ -89,6 +89,18 @@ makeLeader(
 	"Was a member of the International Olumpic Committee",
 	"Was a supervisory board member of the Dutch Central Bank",
 	"Was going to be an airline pilot if he wasn't royalty"
+);
+
+makeLeader(
+	leaderCollector,
+	"Greece",
+	"scripts/countries/celebrities/images/Sakellaropoulou.jpg",
+	"Katerina Sakellaropoulou",
+	"President",
+	"May 30, 1956",
+	"",
+	"Independent",
+	"Is a judge"
 );
 
 console.log(leaderCollector);

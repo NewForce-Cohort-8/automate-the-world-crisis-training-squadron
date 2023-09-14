@@ -51,7 +51,8 @@ const modifyCountries = () => {
 			for (let t = 0; t < database.cities.length; t++) {
 				if (
 					justLetters(database.leaders[g].place) ===
-					justLetters(database.cities[t].name)
+						justLetters(database.cities[t].name) &&
+					database.cities[t].leaders.indexOf(database.leaders[g]) === -1
 				) {
 					database.cities[t].leaders.push(database.leaders[g]);
 				}
@@ -67,4 +68,8 @@ database.landmarks = landmarkCollector;
 database.leaders = leaderCollector;
 modifyCountries();
 
-console.log(database);
+export const getCountries = () => {
+	return database.countries.map((copyOfSingleCountry) => ({
+		...copyOfSingleCountry,
+	}));
+};
