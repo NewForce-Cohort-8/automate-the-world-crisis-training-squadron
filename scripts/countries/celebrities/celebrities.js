@@ -35,7 +35,7 @@ makeCelebrity(
 	"Fashion Designer",
 	"July 11, 1934",
 	"",
-	"Giorgio Armani's signature style of relaxed yet luxurious ready-to-wear and elegant, intricately beaded evening wear helped introduce ease and streamlined modernity to late 20th-century dressing."
+	"His designs are best known for having sophisticated simplicity, sleek tailoring and classic colours."
 );
 
 makeCelebrity(
