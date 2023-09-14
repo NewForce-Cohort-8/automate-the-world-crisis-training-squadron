@@ -4,6 +4,7 @@ import { cityCollector } from "./countries/cities/cities.js";
 import { landmarkCollector } from "./countries/landmarks/landmarks.js";
 import { leaderCollector } from "./countries/leaders/leaders.js";
 import { justLetters } from "./countries/factory-functions.js";
+import { findAge } from "./countries/factory-functions.js";
 
 let database = {
 	countries: [],
@@ -63,9 +64,11 @@ const modifyCountries = () => {
 
 database.countries = countryCollector;
 database.celebrities = celebrityCollector;
+findAge(database.celebrities);
 database.cities = cityCollector;
 database.landmarks = landmarkCollector;
 database.leaders = leaderCollector;
+findAge(database.leaders);
 modifyCountries();
 
 export const getCountries = () => {

@@ -34,6 +34,11 @@ countries.forEach((country) => {
         <h4 class="type data-header">Type</h4>
         <p class="data">${leader.type}</p>
         </div>
+        <div class="row">
+        <h4 class="age data-header">Age</h4>
+        <p class="data">${leader.age}</p>
+        </div>
+        <div class="row">
         <h4 class="birthday data-header">Birthday</h4>
         <p class="data">${leader.birthday}</p>
         </div>`;
@@ -78,6 +83,11 @@ countries.forEach((country) => {
         <h4 class="type data-header">Type</h4>
         <p class="data">${celebrity.type}</p>
         </div>
+        <div class="row">
+        <h4 class="age data-header">Age</h4>
+        <p class="data">${celebrity.age}</p>
+        </div>
+        <div class="row">
         <h4 class="birthday data-header">Birthday</h4>
         <p class="data">${celebrity.birthday}</p>
         </div>`;
@@ -131,6 +141,11 @@ countries.forEach((country) => {
         <h4 class="type data-header">Type</h4>
         <p class="data">${leader.type}</p>
         </div>
+        <div class="row">
+        <h4 class="age data-header">Age</h4>
+        <p class="data">${leader.age}</p>
+        </div>
+        <div class="row">
         <h4 class="birthday data-header">Birthday</h4>
         <p class="data">${leader.birthday}</p>
         </div>`;
@@ -152,28 +167,27 @@ countries.forEach((country) => {
 				htmlString += `<div class"fact"><p>${fact}</p></div>`;
 			});
 		});
-
-		country.landmarks.forEach((landmark) => {
-			htmlString += `<section class="landmark-card">
-        <img src="${landmark.image}" class="landmark-image image" />
-        <h2 class="landmark-name">${landmark.name}</h2>
-        <div class="row">
-        <h3 class="type data-header">Type</h3>
-        <p class="data">${landmark.type}</p>
-        </div>
-        <div class="row">
-        <h3 class="lat-long data-header">Coordinates</h3>
-        <p class="data">${landmark.latitude} ${landmark.longitude}</p>
-        </div>
-        <div class="column">`;
-			htmlString += `
-        <div class="column">
-        <h4 class="knownFor data-header">Fun Facts</h4>`;
-			landmark.knownFor.forEach((fact) => {
-				htmlString += `<div class"fact"><p>${fact}</p></div>`;
-			});
-		});
-		htmlString += `</section>`;
 	});
+	country.landmarks.forEach((landmark) => {
+		htmlString += `<section class="landmark-card">
+    <img src="${landmark.image}" class="landmark-image image" />
+    <h2 class="landmark-name">${landmark.name}</h2>
+    <div class="row">
+    <h3 class="type data-header">Type</h3>
+    <p class="data">${landmark.type}</p>
+    </div>
+    <div class="row">
+    <h3 class="lat-long data-header">Coordinates</h3>
+    <p class="data">${landmark.latitude} ${landmark.longitude}</p>
+    </div>
+    <div class="column">`;
+		htmlString += `
+    <div class="column">
+    <h4 class="knownFor data-header">Fun Facts</h4>`;
+		landmark.knownFor.forEach((fact) => {
+			htmlString += `<div class"fact"><p>${fact}</p></div>`;
+		});
+	});
+	htmlString += `</section>`;
 });
 leftSide.innerHTML = htmlString;
