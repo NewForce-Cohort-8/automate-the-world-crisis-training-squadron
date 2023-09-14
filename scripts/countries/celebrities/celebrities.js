@@ -93,8 +93,93 @@ let thisDay = today.getDate();
 console.log(today, thisYear, thisMonth, thisDay);
 
 celebrityCollector.forEach((celebrity) => {
+	let age;
 	let birth = celebrity.birthday;
 	let birthArray = birth.split(",").join("").split("th").join("").split(" ");
+	let isMonth = /[A-Za-z]{3,}/;
+	let isYear = /[0-9]{3,4}/;
+	let birthMonth;
+	let birthYear;
+	let birthDay;
+
+	if (isMonth.test(birthArray[0])) {
+		birthMonth = birthArray[0];
+		birthMonth.toLowerCase() === "january"
+			? (birthMonth = 1)
+			: birthMonth.toLowerCase() === "february"
+			? (birthMonth = 2)
+			: birthMonth.toLowerCase() === "march"
+			? (birthMonth = 3)
+			: birthMonth.toLowerCase() === "april"
+			? (birthMonth = 4)
+			: birthMonth.toLowerCase() === "may"
+			? (birthMonth = 5)
+			: birthMonth.toLowerCase() === "june"
+			? (birthMonth = 6)
+			: birthMonth.toLowerCase() === "july"
+			? (birthMonth = 7)
+			: birthMonth.toLowerCase() === "august"
+			? (birthMonth = 8)
+			: birthMonth.toLowerCase() === "september"
+			? (birthMonth = 9)
+			: birthMonth.toLowerCase() === "october"
+			? (birthMonth = 10)
+			: birthMonth.toLowerCase() === "november"
+			? (birthMonth = 11)
+			: birthMonth.toLowerCase() === "december"
+			? (birthMonth = 12)
+			: birthArray[0];
+	}
+	for (let i = 0; i < birthArray.length; i++) {
+		if (isYear.test(birthArray[i])) {
+			birthYear = birthArray[i];
+			console.log(birthYear);
+		}
+	}
+
+	if ()
+	let deathArray;
+	let deathYear;
+	let deathMonth;
+	if (celebrity.death !== "") {
+		let death = celebrity.death;
+		deathArray = death.split(",").join("").split("th").join("").split(" ");
+		if (isMonth.test(deathArray[0])) {
+			deathMonth = deathArray[0];
+			deathMonth.toLowerCase() === "january"
+				? (deathMonth = 1)
+				: deathMonth.toLowerCase() === "february"
+				? (deathMonth = 2)
+				: deathMonth.toLowerCase() === "march"
+				? (deathMonth = 3)
+				: deathMonth.toLowerCase() === "april"
+				? (deathMonth = 4)
+				: deathMonth.toLowerCase() === "may"
+				? (deathMonth = 5)
+				: deathMonth.toLowerCase() === "june"
+				? (deathMonth = 6)
+				: deathMonth.toLowerCase() === "july"
+				? (deathMonth = 7)
+				: deathMonth.toLowerCase() === "august"
+				? (deathMonth = 8)
+				: deathMonth.toLowerCase() === "september"
+				? (deathMonth = 9)
+				: deathMonth.toLowerCase() === "october"
+				? (deathMonth = 10)
+				: deathMonth.toLowerCase() === "november"
+				? (deathMonth = 11)
+				: deathMonth.toLowerCase() === "december"
+				? (deathMonth = 12)
+				: deathArray[0];
+		}
+		for (let i = 0; i < deathArray.length; i++) {
+			if (isYear.test(deathArray[i])) {
+				deathYear = deathArray[i];
+				console.log(deathYear);
+			}
+		}
+	}
+	console.log(birthMonth);
 	console.log(birthArray);
-	// console.log(celebrity.birthday.getDate());
+	console.log(deathArray);
 });

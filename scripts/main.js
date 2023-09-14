@@ -114,6 +114,12 @@ countries.forEach((country) => {
         <p class="data">${city.latitude} ${city.longitude}</p>
         </div>
         <div class="column">`;
+		htmlString += `
+        <div class="column">
+        <h4 class="knownFor data-header">Fun Facts</h4>`;
+		city.knownFor.forEach((fact) => {
+			htmlString += `<div class"fact"><p>${fact}</p></div>`;
+		});
 		if (city.leaders.length > 0) {
 			htmlString += `<h3 class="leaders">Leaders</h3>
         <div class="row">`;
@@ -142,7 +148,7 @@ countries.forEach((country) => {
 			htmlString += `
         <div class="column">
         <h4 class="knownFor data-header">Fun Facts</h4>`;
-			city.knownFor.forEach((fact) => {
+			leader.knownFor.forEach((fact) => {
 				htmlString += `<div class"fact"><p>${fact}</p></div>`;
 			});
 		});
