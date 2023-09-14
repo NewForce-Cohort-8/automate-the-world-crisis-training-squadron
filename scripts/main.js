@@ -66,7 +66,7 @@ countries.forEach((country) => {
     <div class="row">
     <h3 class="food data-header">National Cuisine</h3>
     <p class="data">${country.food}</p>
-    </div>;
+    </div>
     <div class="column">
     <h3 class="celebrities">Celebrities</h3>
     <div class="row">`;

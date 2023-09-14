@@ -22,8 +22,8 @@ makeCity(
 	4316000,
 	"41.9028° N",
 	"12.4964° E",
-	"The founding story of Rome is quite interesting. According to mythology, it was founded way back in 753 BC by twin brothers Romulus and Remus. It’s believed that the two brothers were raised by a she-wolf after being abandoned on the banks of the Tiber.",
-	"The city of Rome has more fountains than any other city on the planet and their cats have special rights. Cats may live wherever they choose and it's against the law to relocate them by force."
+	"Founded by twin brothers Romulus and Remus who were believed to be raised by a she-wolf after being abandoned on the banks of the Tiber.",
+	"Cats have special rights and it is against the law to relocate them by force."
 );
 
 makeCity(
